@@ -80,13 +80,6 @@ export async function build () {
   const swaggerOptions = {
     // @ts-ignore
     openapi: specification,
-    swagger: {
-      consumes: [
-        'application/json',
-        'multipart/form-data'
-      ]
-    },
-
     routePrefix: '/docs',
     exposeRoute: true
   };
